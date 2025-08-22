@@ -15,6 +15,13 @@
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
+/* Projects section paragraphs white */
+.projects-list p {
+  color: rgba(255, 255, 255, 0.6); /* 60% white */
+}
+
+
+
 :root {
 
   /**
