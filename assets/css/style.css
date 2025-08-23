@@ -926,12 +926,6 @@ main {
   pointer-events: all;
 }
 
-/* --- Fix for mobile Contact page being empty --- */
-.contact .sidebar-info_more {
-  opacity: 1 !important;
-  visibility: visible !important;
-}
-
 .select-item button {
   background: var(--eerie-black-2);
   color: var(--light-gray);
