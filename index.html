@@ -1261,77 +1261,111 @@
 <!--
         - #CONTACT
       -->
-<article class="contact" data-page="contact">
 
-  <header>
-    <h2 class="h2 article-title">Contact</h2>
-  </header>
+ /* Contact section styles */
+    .contacts-list,
+    .social-list {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
 
-  <div class="sidebar-info_more">
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
 
-    <div class="separator"></div>
+    .icon-box {
+      font-size: 20px;
+      color: #0077b5;
+    }
 
-    <ul class="contacts-list">
+    .contact-link {
+      color: #333;
+      text-decoration: none;
+    }
 
-      <li class="contact-item">
-        <div class="icon-box">
-          <ion-icon name="mail-outline"></ion-icon>
-        </div>
-        <div class="contact-info">
-          <p class="contact-title">Email</p>
-          <a href="mailto:karrimanikanta369@gmail.com" class="contact-link">
-            karrimanikanta369@gmail.com
+    .contact-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+    }
+  </style>
+
+  <!-- Contact Page -->
+  <article class="contact" data-page="contact">
+    <header>
+      <h2 class="h2 article-title">Contact</h2>
+    </header>
+
+    <div class="sidebar-info_more">
+
+      <div class="separator"></div>
+
+      <ul class="contacts-list">
+        <li class="contact-item">
+          <div class="icon-box">
+            <ion-icon name="mail-outline"></ion-icon>
+          </div>
+          <div class="contact-info">
+            <p class="contact-title">Email</p>
+            <a href="mailto:karrimanikanta369@gmail.com" class="contact-link">
+              karrimanikanta369@gmail.com
+            </a>
+          </div>
+        </li>
+
+        <li class="contact-item">
+          <div class="icon-box">
+            <ion-icon name="phone-portrait-outline"></ion-icon>
+          </div>
+          <div class="contact-info">
+            <p class="contact-title">Phone</p>
+            <a href="tel:+917288123456" class="contact-link">+91 7288 123456</a>
+          </div>
+        </li>
+
+        <li class="contact-item">
+          <div class="icon-box">
+            <ion-icon name="calendar-outline"></ion-icon>
+          </div>
+          <div class="contact-info">
+            <p class="contact-title">Birthday</p>
+            <time datetime="2001-03-07">March 7th 2001</time>
+          </div>
+        </li>
+
+        <li class="contact-item">
+          <div class="icon-box">
+            <ion-icon name="location-outline"></ion-icon>
+          </div>
+          <div class="contact-info">
+            <p class="contact-title">Location</p>
+            <address>Hyderabad, Telangana, India</address>
+          </div>
+        </li>
+      </ul>
+
+      <div class="separator"></div>
+
+      <ul class="social-list">
+        <li class="social-item">
+          <a href="https://www.linkedin.com/in/manikantakarri369/" class="social-link" target="_blank">
+            <ion-icon name="logo-linkedin"></ion-icon>
           </a>
-        </div>
-      </li>
-
-      <li class="contact-item">
-        <div class="icon-box">
-          <ion-icon name="phone-portrait-outline"></ion-icon>
-        </div>
-        <div class="contact-info">
-          <p class="contact-title">Phone</p>
-          <a href="tel:+917288123456" class="contact-link">+91 7288 123456</a>
-        </div>
-      </li>
-
-      <li class="contact-item">
-        <div class="icon-box">
-          <ion-icon name="calendar-outline"></ion-icon>
-        </div>
-        <div class="contact-info">
-          <p class="contact-title">Birthday</p>
-          <time datetime="2001-03-07">March 7th 2001</time>
-        </div>
-      </li>
-
-      <li class="contact-item">
-        <div class="icon-box">
-          <ion-icon name="location-outline"></ion-icon>
-        </div>
-        <div class="contact-info">
-          <p class="contact-title">Location</p>
-          <address>Hyderabad, Telangana, India</address>
-        </div>
-      </li>
-
-    </ul>
-
-    <div class="separator"></div>
-
-    <ul class="social-list">
-      
-      </li>
-      <li class="social-item">
-        <a href="https://www.linkedin.com/in/manikantakarri369/" class="social-link" target="_blank">
-          <ion-icon name="logo-linkedin"></ion-icon>
-        </a>
-      </li>
-    </ul>
-
-  </div>
-
-</article>
+        </li>
+      </ul>
+    </div>
+  </article>
 
 
 
