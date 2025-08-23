@@ -14,9 +14,9 @@ navigationLinks.forEach((link) => {
     // add active to clicked link
     link.classList.add("active");
 
-    // find the page with matching data-page
+    // find the page with matching data-page (case-insensitive)
     pages.forEach((page) => {
-      if (page.dataset.page === targetPage) {
+      if (page.dataset.page.toLowerCase() === targetPage) {
         page.classList.add("active");
       }
     });
