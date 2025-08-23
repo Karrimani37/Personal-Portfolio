@@ -30,6 +30,15 @@
 
   /* gradient */
 
+	/* --- Fix for mobile Contact page being empty --- */
+.contact .sidebar-info_more {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+  height: auto !important;
+}
+
+
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
     hsl(240, 1%, 25%) 3%, 
