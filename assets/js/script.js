@@ -5,7 +5,7 @@ const pages = document.querySelectorAll("[data-page]");
 // add event to all nav link
 navigationLinks.forEach((link) => {
   link.addEventListener("click", () => {
-    const targetPage = link.dataset.navLink.toLowerCase();
+    const targetPage = link.textContent.trim().toLowerCase();
 
     // remove active from all
     navigationLinks.forEach((nav) => nav.classList.remove("active"));
@@ -16,7 +16,7 @@ navigationLinks.forEach((link) => {
 
     // find the page with matching data-page
     pages.forEach((page) => {
-      if (page.dataset.page.toLowerCase() === targetPage) {
+      if (page.dataset.page === targetPage) {
         page.classList.add("active");
       }
     });
