@@ -23,46 +23,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <style>
-  /* Contact section styles */
-  .contacts-list,
-  .social-list {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .contact-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .icon-box {
-    font-size: 20px;
-    color: #0077b5;
-  }
-
-  .contact-link {
-    color: #333;
-    text-decoration: none;
-  }
-
-  .contact-link:hover {
-    text-decoration: underline;
-  }
-
-  /* Responsive navbar */
-  @media (max-width: 600px) {
-    nav {
-      flex-direction: column;
-    }
-  }
-</style>
-
 </head>
 
 <body>
@@ -99,7 +59,7 @@
 
       </div>
 
-<!--       <div class="sidebar-info_more">
+      <div class="sidebar-info_more">
 
         <div class="separator"></div>
 
@@ -161,7 +121,7 @@
 
           </li>
 
-        </ul> -->
+        </ul>
 
         <!-- <div class="separator"></div>
 
@@ -230,9 +190,8 @@
           </li> -->
 
           <li class="navbar-item">
-  <button class="navbar-link" data-nav-link="contact">Contact</button>
-</li>
-
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
 
         </ul>
 
@@ -628,9 +587,8 @@
               <h3 class="h4 timeline-item-title">Board of Secondary Education (SSC) | CGPA: 9.2</h3>
 
 
-              <span>2016 — 2017</span>
+              <span>2017 — 2019</span>
 
-          
               <p class="timeline-text">
                Completed SSC with good academic performance, forming the foundation of my educational journey.
               </p>
@@ -1299,74 +1257,57 @@
 
 
 
-<!--
+
+      <!--
         - #CONTACT
       -->
 
- /* Contact section styles */
-   <article class="contact" data-page="contact">
-  <header>
-    <h2 class="h2 article-title">Contact</h2>
-  </header>
+      <article class="contact" data-page="contact">
 
-  <div class="sidebar-info_more">
-    <div class="separator"></div>
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
 
-    <ul class="contacts-list">
-      <li class="contact-item">
-        <div class="icon-box">
-          <ion-icon name="mail-outline"></ion-icon>
-        </div>
-        <div class="contact-info">
-          <p class="contact-title">Email</p>
-          <a href="mailto:karrimanikanta369@gmail.com" class="contact-link">
-            karrimanikanta369@gmail.com
-          </a>
-        </div>
-      </li>
+        <!-- <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section> -->
 
-      <li class="contact-item">
-        <div class="icon-box">
-          <ion-icon name="phone-portrait-outline"></ion-icon>
-        </div>
-        <div class="contact-info">
-          <p class="contact-title">Phone</p>
-          <a href="tel:+917288123456" class="contact-link">+91 7288 123456</a>
-        </div>
-      </li>
+        <section class="contact-form">
 
-      <li class="contact-item">
-        <div class="icon-box">
-          <ion-icon name="calendar-outline"></ion-icon>
-        </div>
-        <div class="contact-info">
-          <p class="contact-title">Birthday</p>
-          <time datetime="2001-03-07">March 7th 2001</time>
-        </div>
-      </li>
+          <h3 class="h3 form-title">Contact Form</h3>
 
-      <li class="contact-item">
-        <div class="icon-box">
-          <ion-icon name="location-outline"></ion-icon>
-        </div>
-        <div class="contact-info">
-          <p class="contact-title">Location</p>
-          <address>Hyderabad, Telangana, India</address>
-        </div>
-      </li>
-    </ul>
+          <form action="#" class="form" data-form>
 
-    <div class="separator"></div>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
 
-    <ul class="social-list">
-      <li class="social-item">
-        <a href="https://www.linkedin.com/in/manikantakarri369/" class="social-link" target="_blank">
-          <ion-icon name="logo-linkedin"></ion-icon>
-        </a>
-      </li>
-    </ul>
-  </div>
-</article>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
 
 
   <!--
@@ -1377,7 +1318,9 @@
   <!--
     - ionicon link
   -->
- <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
 
 </html>
